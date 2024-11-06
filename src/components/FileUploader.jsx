@@ -112,7 +112,7 @@ const FileUploader = () => {
 
     return (
         <div>
-            <h1>CSV Uploader</h1>
+            <h1>Daily Orders Populator</h1>
             <input type="file" accept=".csv" onChange={handleBaseFileChange} />
             <input type="file" accept=".csv" multiple onChange={handleInputFilesChange} />
             <button onClick={processFiles}>Process Files</button>

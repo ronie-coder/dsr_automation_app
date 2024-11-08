@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -70,11 +71,125 @@ button:focus-visible {
 .graph-container {
   padding-left: 20px;
   margin-top: 100px;
-  width: 50vw; /* Fixed width of 50% of the viewport */
+  width: 100%; /* Fixed width of 50% of the viewport */
   overflow-x: auto; /* Enable horizontal scrolling */
   white-space: nowrap; /* Prevent line breaks */
 }
 
 .graph-container .recharts-responsive-container {
   min-width: 1000px; /* Adjust this width based on your data */
+}
+
+/* App.css */
+
+
+/* App.css */
+
+
+
+/* App.css */
+
+/* App.css */
+
+
+
+.marquee-container {
+  position: relative; /* Position relative for absolute positioning of the marquee */
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  background-color: black; /* Background color of the container */
+  color: white; /* Set the text color to white */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(300%); /* End off-screen to the left */
+  }
+}
+
+.marquee {
+  position: absolute;
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: slide 10s linear infinite; /* Adjust the duration as needed */
+  top: 0; /* Align at the top of the container */
+  left: 0;
+  color: white; /* Set the text color to white */
+  font-size: 1.5rem; /* Optional: Adjust font size as needed */
+  padding: 10px; /* Optional: Add some padding */
+  line-height: 2; /* Adjust line height for spacing */
+}
+
+.reset-button{
+  background-color: grey;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* components/HowToUse.css */
+
+.how-to-use {
+  background-color: #1e1e1e; /* Dark background color */
+  border: 2px dashed white; /* Dashed border with white color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding around the content */
+  margin: 20px 0; /* Margin above and below the section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.how-to-use-title {
+  font-size: 24px; /* Larger font size for the title */
+  margin-bottom: 10px; /* Space below the title */
+  color: #ffffff; /* White text color for the title */
+}
+
+.how-to-use-description,
+.how-to-use-instructions {
+  font-size: 16px; /* Standard font size */
+  color: #e0e0e0; /* Lighter gray text color for better readability */
+  margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.how-to-use-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.how-to-use-list li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.how-to-use-link {
+  text-decoration: none; /* Remove underline */
+  color: #1e90ff; /* Bright blue color for links */
+  font-weight: bold; /* Bold text */
+}
+
+.how-to-use-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #63a4ff; /* Lighter blue on hover */
+}
+
+
+.main-app{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.main-div{
+  background-color: #1e1e1e; /* Dark background color */
+  border: 2px dashed white; /* Dashed border with white color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding around the content */
+  margin: 20px 0; /* Margin above and below the section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.download-button{
+  background-color: rgb(84, 167, 219);
 }

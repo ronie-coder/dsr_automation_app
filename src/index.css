@@ -66,3 +66,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.graph-container {
+  padding-left: 20px;
+  margin-top: 100px;
+  width: 50vw; /* Fixed width of 50% of the viewport */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.graph-container .recharts-responsive-container {
+  min-width: 1000px; /* Adjust this width based on your data */
+}
